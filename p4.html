@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arabïan Voyagé – Quiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Limelight&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+body{margin:0;font-family:Poppins,sans-serif;color:#333;background:url('p6.jpeg') center/cover no-repeat;background-size:cover;}
+nv{display:flex;justify-content:flex-end;align-items:center;padding:12px 30px;background:rgba(240,248,255,.8);backdrop-filter:blur(6px);position:sticky;top:0;z-index:100;}
+.lg{font-family:'Cookie',cursive;font-size:2em;color:salmon;margin-right:auto;}
+nv a{text-decoration:none;color:#0a2a6b;margin:0 12px;font-weight:600;transition:.3s;}
+nv a:hover{color:salmon;}
+.si{font-family:'Material Icons';color:#0a2a6b;font-size:28px;cursor:pointer;}
+.si:hover{color:salmon;}
+.qc{max-width:750px;margin:60px auto;padding:30px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.15);text-align:center;background:rgba(255,255,255,.8);backdrop-filter:blur(6px);}
+.qc h1{font-family:'Limelight',cursive;color:salmon;margin-bottom:15px;}
+.qdiv{margin-bottom:30px;text-align:left;}
+.qdiv h3{color:steelblue;margin-bottom:12px;font-size:1.1em;}
+.opt{display:flex;flex-wrap:wrap;gap:10px;}
+.opt input{display:none;}
+.opt label{flex:1;text-align:center;padding:12px 18px;border:2px solid #ccc;border-radius:10px;background:#fff;font-weight:600;cursor:pointer;transition:.3s;}
+.opt input:checked+label{border-color:salmon;background:seashell;color:salmon;}
+.bt{background:salmon;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;transition:.3s;}
+.bt:hover{background:lightblue;}
+#res{display:none;margin-top:20px;text-align:center;font-size:1.2em;}
+#res h2{font-family:'Limelight',cursive;color:#0a2a6b;margin-bottom:10px;}
+#res p{font-family:Poppins;}
+footer{background:rgba(240,248,255,.75);backdrop-filter:blur(6px);color:#2b2b2b;text-align:center;padding:15px 0;font-weight:600;}
+</style>
+</head>
+<body>
+
+<nv>
+<div class="lg">Arabïan Voyagé</div>
+<a href="p1.html">Home</a>
+<a href="#">Destinations</a>
+<a href="p2.html">Map</a>
+<a href="p3.html">Contact</a>
+<span class="si">search</span>
+</nv>
+
+<div class="qc">
+<h1>Plan Your Next Adventure</h1>
+<p>Answer a few questions to find your dream destination!</p>
+
+<div class="qdiv">
+<h3>1. Perfect weekend?</h3>
+<div class="opt">
+<input type="radio" id="r1" name="q1"><label for="r1">Spa</label>
+<input type="radio" id="r2" name="q1"><label for="r2">Adventure</label>
+<input type="radio" id="r3" name="q1"><label for="r3">City</label>
+</div>
+</div>
+
+<div class="qdiv">
+<h3>2. Travel buddy?</h3>
+<div class="opt">
+<input type="radio" id="r4" name="q2"><label for="r4">Solo</label>
+<input type="radio" id="r5" name="q2"><label for="r5">Friends</label>
+<input type="radio" id="r6" name="q2"><label for="r6">Family</label>
+</div>
+</div>
+
+<div class="qdiv">
+<h3>3. Favorite scenery?</h3>
+<div class="opt">
+<input type="radio" id="r7" name="q3"><label for="r7">Mountains</label>
+<input type="radio" id="r8" name="q3"><label for="r8">Sea</label>
+<input type="radio" id="r9" name="q3"><label for="r9">Desert</label>
+</div>
+</div>
+
+<button class="bt" onclick="document.getElementById('res').style.display='block'">Show My Destination</button>
+<div id="res">
+<h2>Riyadh!</h2>
+<p>The city of lights and love awaits you.</p>
+</div>
+</div>
+
+<footer>© 2025 Arabïan Voyagé travel Blog. All rights reserved.</footer>
+
+</body>
+</html>

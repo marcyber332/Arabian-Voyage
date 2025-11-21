@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arabïan Voyagé – Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Limelight&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+body{margin:0;font-family:Poppins,sans-serif;background:linear-gradient(135deg,oldlace,aliceblue);color:#2b2b2b;}
+nv{background:rgba(240,248,255,.8);backdrop-filter:blur(6px);display:flex;justify-content:space-between;align-items:center;padding:15px 60px;position:sticky;top:0;z-index:100;}
+.lg{font-family:'Cookie',cursive;font-size:2em;color:salmon;}
+nv ul{display:flex;gap:12px;list-style:none;margin:0;padding:0;align-items:center;}
+nv a{text-decoration:none;color:#0a2a6b;font-weight:600;transition:.3s;}
+nv a:hover{color:salmon;}
+.si{font-family:'Material Icons';color:#0a2a6b;font-size:28px;cursor:pointer;transition:.3s;}
+.si:hover{color:salmon;}
+.hr{background:url('p1.jpeg') center/cover no-repeat;height:500px;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;font-family:'Limelight',cursive;position:relative;}
+.hr::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.45);}
+.hr h1,.hr p{position:relative;z-index:1;text-shadow:2px 2px 6px rgba(0,0,0,.7);}
+main{padding:60px 10%;text-align:center;}
+main h2{color:#9e2a2b;border-bottom:3px solid #e09f3e;display:inline-block;padding-bottom:8px;margin-bottom:40px;}
+.tg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+.tc{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,.1);transition:.3s;}
+.tc:hover{background:#ffe5cc;transform:scale(1.03);}
+.tc img{width:100%;height:200px;object-fit:cover;}
+.tcnt{padding:20px;}
+.tcnt h3{color:#e09f3e;margin-bottom:10px;font-family:'Limelight',cursive;}
+.qz{margin-top:60px;display:flex;align-items:center;justify-content:center;gap:20px;padding:30px;background:seashell;border:2px solid salmon;border-radius:12px;}
+.qz button{background:salmon;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:bold;cursor:pointer;transition:.3s;}
+.qz button:hover{background:lightblue;color:#000;}
+footer{background:rgba(240,248,255,.75);text-align:center;padding:15px 0;font-weight:600;}
+</style>
+</head>
+<body>
+<nv>
+<div class="lg">Arabïan Voyagé</div>
+<ul>
+<li><a href="p1.html">Home</a></li>
+<li><a href="#">Destinations</a></li>
+<li><a href="p2.html">Map</a></li>
+<li><a href="p3.html">Contact</a></li>
+<span class="si">search</span>
+</ul>
+</nv>
+<section class="hr">
+<h1>Chase the Sunrise, Live the Adventure</h1>
+<p>Explore breathtaking places and create golden memories.</p>
+</section>
+<main>
+<h2>Popular Destinations</h2>
+<div class="tg">
+<div class="tc"><img src="p2.jpeg" alt="p2"><div class="tcnt"><h3>Riyadh</h3><p>City of lights awaits you.</p></div></div>
+<div class="tc"><img src="p3.jpeg" alt="p3"><div class="tcnt"><h3>Jeddah</h3><p>Crystal waters, golden sands.</p></div></div>
+</div>
+<div class="qz">
+<h2>Can't find a destination suited for you?</h2>
+<button onclick="location.href='p4.html'">Play Quiz!</button>
+</div>
+</main>
+<footer>© 2025 Arabïan Voyagé travel Blog. All rights reserved.</footer>
+</body>
+</html>
